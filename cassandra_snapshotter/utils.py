@@ -40,9 +40,11 @@ def add_s3_arguments(arg_parser):
     Adds common S3 argument to a parser
     """
     arg_parser.add_argument('--aws-access-key-id',
+                            default=None,
                             help="public AWS access key.")
 
     arg_parser.add_argument('--aws-secret-access-key',
+                            default=None,
                             help="S3 secret access key.")
 
     arg_parser.add_argument('--s3-bucket-region',
